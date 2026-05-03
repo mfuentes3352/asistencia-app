@@ -12,13 +12,13 @@ app.use(express.static(__dirname));
 let alumnos = JSON.parse(fs.readFileSync("alumnos.json", "utf-8"));
 
 
-// 👉 1. Obtener lista completa
+// 1. Obtener lista completa
 app.get("/alumnos", (req, res) => {
     res.json(alumnos);
 });
 
 
-// 👉 2. Marcar asistencia
+// 2. Marcar asistencia
 app.post("/asistencia", (req, res) => {
     const { id } = req.body;
 
@@ -41,7 +41,7 @@ app.post("/asistencia", (req, res) => {
 });
 
 
-// 👉 3. Ver estado
+// 3. Ver estado
 app.get("/estado", (req, res) => {
     const presentes = alumnos.filter(a => a.presente);
     const ausentes = alumnos.filter(a => !a.presente);

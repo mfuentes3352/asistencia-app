@@ -80,7 +80,7 @@ tr:nth-child(even) {
 
 <script>
 async function cargarTabla() {
-    const res = await fetch("http://192.168.0.104:3000/tabla");
+    const res = await const res = await fetch("/tabla");
     const data = await res.json();
 
     const tbody = document.getElementById("tabla");
@@ -109,7 +109,7 @@ async function cargarTabla() {
 }
 
 async function exportarCSV() {
-    const res = await fetch("http://192.168.0.104:3000/tabla");
+    const res = await const res = await fetch("/tabla");
     const data = await res.json();
 
     let csv = "Alumno,Estado\n";

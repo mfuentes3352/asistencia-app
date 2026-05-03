@@ -10,7 +10,6 @@ lineas.forEach((linea, index) => {
 
     if (!linea.trim()) return;
 
-    // Separar solo la primera coma (legajo del resto)
     const primeraComa = linea.indexOf(",");
 
     let legajo = linea.slice(0, primeraComa).trim();
@@ -42,5 +41,6 @@ fs.writeFileSync(
     "alumnos.json",
     JSON.stringify(alumnos, null, 2)
 );
+
 
 console.log(alumnos);
