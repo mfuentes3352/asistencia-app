@@ -119,19 +119,23 @@ async function exportarCSV() {
     const res = await fetch("/tabla");
     const data = await res.json();
 
-    let csv = "Alumno,Estado\n";
+    const fecha = new Date().toLocaleDateString("es-AR");
+
+    let csv = `Fecha,${fecha}\n\n`;
+    csv += "Alumno,Estado\n";
 
     data.forEach(alumno => {
         csv += `"${alumno.nombre}","${alumno.estado}"\n`;
     });
 
-    // Crear archivo
-    const blob = new Blob([csv], { type: "text/csv" });
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
     const url = window.URL.createObjectURL(blob);
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = "asistencia.csv";
+
+    a.download = `asistencia_${fecha.replace(/\//g, "-")}.csv`;
+
     a.click();
 
     window.URL.revokeObjectURL(url);
