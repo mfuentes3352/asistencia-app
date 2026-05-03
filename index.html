@@ -18,6 +18,7 @@
             border-bottom: 1px solid #ddd;
             display: flex;
             align-items: center;
+            gap: 15px;
         }
 
         header img {
@@ -25,27 +26,29 @@
         }
 
         header h1 {
-            margin-left: 15px;
-            font-size: 20px;
-        }
+    margin: 0;
+    font-size: 20px;
+}
 
         /* CONTENEDOR */
         .container {
             max-width: 400px;
             margin: 60px auto;
             background: white;
-            padding: 25px;
+            padding: 30px;
             border-radius: 8px;
             box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
             text-align: center;
         }
 
         select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            font-size: 14px;
-        }
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
         button {
             margin-top: 15px;
@@ -64,10 +67,27 @@
 
         #mensaje {
             margin-top: 10px;
+           color: green;
         }
-#mensaje {
-    color: green;
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.subtitulo {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.info {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+
     </style>
 </head>
 
@@ -75,7 +95,11 @@
 
 <header>
     <img src="/logo.png">
-    <h1>Registro de Asistencia</h1>
+    <div>
+        <h1>Registro de Asistencia</h1>
+        <p class="subtitulo">Informática (FB7) – Comisión 123</p>
+        <p class="info">Docentes: Inés Palou – Martín Fuentes</p>
+    </div>
 </header>
 
 <div class="container">
@@ -107,10 +131,23 @@ async function cargarAlumnos() {
         option.text = a.apellido + ", " + a.nombre;
         select.appendChild(option);
     });
+
+    select.addEventListener("change", () => {
+        document.getElementById("mensaje").innerText = "";
+        document.querySelector("button").disabled = false;
+    });
 }
 
+
 async function marcar() {
-    const id = document.getElementById("listaAlumnos").value;
+    const select = document.getElementById("listaAlumnos");
+
+    if (!select.value) {
+        alert("Seleccioná un estudiante");
+        return;
+    }
+
+    const id = select.value;
 
     const res = await fetch("/asistencia", {
         method: "POST",
@@ -123,6 +160,8 @@ async function marcar() {
     const data = await res.json();
 
     document.getElementById("mensaje").innerText = data.mensaje;
+
+    document.querySelector("button").disabled = true;
 }
 
 cargarAlumnos();
