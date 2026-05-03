@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estado de Asistencia</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.presente {
+    color: green;
+    font-weight: bold;
+}
+
+.ausente {
+    color: red;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Estado de Asistencia</h2>
+
+<button onclick="exportarCSV()" style="padding:8px; font-size:14px;">
+    Exportar a Excel
+</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Alumno</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody id="tabla"></tbody>
+</table>
+
+<script>
+async function cargarTabla() {
+    const res = await fetch("http://192.168.0.104:3000/tabla");
+    const data = await res.json();
+
+    const tbody = document.getElementById("tabla");
+    tbody.innerHTML = "";
+
+    data.forEach(alumno => {
+        const fila = document.createElement("tr");
+
+        const tdNombre = document.createElement("td");
+        tdNombre.textContent = alumno.nombre;
+
+        const tdEstado = document.createElement("td");
+        tdEstado.textContent = alumno.estado;
+
+        if (alumno.estado === "Presente") {
+            tdEstado.classList.add("presente");
+        } else {
+            tdEstado.classList.add("ausente");
+        }
+
+        fila.appendChild(tdNombre);
+        fila.appendChild(tdEstado);
+
+        tbody.appendChild(fila);
+    });
+}
+
+async function exportarCSV() {
+    const res = await fetch("http://192.168.0.104:3000/tabla");
+    const data = await res.json();
+
+    let csv = "Alumno,Estado\n";
+
+    data.forEach(alumno => {
+        csv += `"${alumno.nombre}","${alumno.estado}"\n`;
+    });
+
+    // Crear archivo
+    const blob = new Blob([csv], { type: "text/csv" });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "asistencia.csv";
+    a.click();
+
+    window.URL.revokeObjectURL(url);
+}
+
+// refresca cada 3 segundos automáticamente
+setInterval(cargarTabla, 3000);
+
+cargarTabla();
+</script>
+
+</body>
+</html>

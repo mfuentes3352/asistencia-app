@@ -1,0 +1,618 @@
+[
+  {
+    "id": 1,
+    "legajo": "A-4743/1",
+    "apellido": "Abba Marucco",
+    "nombre": "Juan Pablo",
+    "presente": false
+  },
+  {
+    "id": 2,
+    "legajo": "A-4469/5",
+    "apellido": "Alonso",
+    "nombre": "Alejandro Martín",
+    "presente": false
+  },
+  {
+    "id": 3,
+    "legajo": "A-4643/4",
+    "apellido": "Altamiranda Romero",
+    "nombre": "Mateo Thomas",
+    "presente": false
+  },
+  {
+    "id": 4,
+    "legajo": "A-4649/3",
+    "apellido": "Araujo",
+    "nombre": "Ignacio",
+    "presente": false
+  },
+  {
+    "id": 5,
+    "legajo": "A-4508/1",
+    "apellido": "Ayala",
+    "nombre": "Agustín",
+    "presente": false
+  },
+  {
+    "id": 6,
+    "legajo": null,
+    "apellido": "Barbosa",
+    "nombre": "Agustin",
+    "presente": false
+  },
+  {
+    "id": 7,
+    "legajo": null,
+    "apellido": "Bellanca",
+    "nombre": "Lucio",
+    "presente": false
+  },
+  {
+    "id": 8,
+    "legajo": "C-7497/7",
+    "apellido": "Carabelli",
+    "nombre": "Martina Belèn",
+    "presente": false
+  },
+  {
+    "id": 9,
+    "legajo": "C-7466/7",
+    "apellido": "Carluchio",
+    "nombre": "Máximo",
+    "presente": false
+  },
+  {
+    "id": 10,
+    "legajo": "C-7472/1",
+    "apellido": "Cattena",
+    "nombre": "Sofía",
+    "presente": false
+  },
+  {
+    "id": 11,
+    "legajo": null,
+    "apellido": "Chiabrera",
+    "nombre": "Clara",
+    "presente": false
+  },
+  {
+    "id": 12,
+    "legajo": "C-7459/4",
+    "apellido": "Chiucchi",
+    "nombre": "Dante Lino",
+    "presente": false
+  },
+  {
+    "id": 13,
+    "legajo": "C-7231/1",
+    "apellido": "Chiurchiu",
+    "nombre": "Mora",
+    "presente": false
+  },
+  {
+    "id": 14,
+    "legajo": "C-7532/9",
+    "apellido": "Concina",
+    "nombre": "Juan Ignacio",
+    "presente": false
+  },
+  {
+    "id": 15,
+    "legajo": "C-6959/1",
+    "apellido": "Conde",
+    "nombre": "Augusto Tomás",
+    "presente": false
+  },
+  {
+    "id": 16,
+    "legajo": "C-7160/9",
+    "apellido": "Coria",
+    "nombre": "Jazmin Viviana",
+    "presente": false
+  },
+  {
+    "id": 17,
+    "legajo": "C-6381/9",
+    "apellido": "Criniti",
+    "nombre": "Sebastián Francisco",
+    "presente": false
+  },
+  {
+    "id": 18,
+    "legajo": null,
+    "apellido": "Damiani Alustiza",
+    "nombre": "Josefina",
+    "presente": false
+  },
+  {
+    "id": 19,
+    "legajo": null,
+    "apellido": "De Cesar",
+    "nombre": "Mauricio",
+    "presente": false
+  },
+  {
+    "id": 20,
+    "legajo": null,
+    "apellido": "Deninotti",
+    "nombre": "Santino",
+    "presente": false
+  },
+  {
+    "id": 21,
+    "legajo": null,
+    "apellido": "Dichiara",
+    "nombre": "Camilo",
+    "presente": false
+  },
+  {
+    "id": 22,
+    "legajo": null,
+    "apellido": "Farayi",
+    "nombre": "Albertina",
+    "presente": false
+  },
+  {
+    "id": 23,
+    "legajo": null,
+    "apellido": "Ferrari",
+    "nombre": "Manuel",
+    "presente": false
+  },
+  {
+    "id": 24,
+    "legajo": null,
+    "apellido": "Ferraro",
+    "nombre": "Azul",
+    "presente": false
+  },
+  {
+    "id": 25,
+    "legajo": "F-3598/1",
+    "apellido": "Ferri",
+    "nombre": "Stéfano",
+    "presente": false
+  },
+  {
+    "id": 26,
+    "legajo": null,
+    "apellido": "Ferro",
+    "nombre": "Baltazar David",
+    "presente": false
+  },
+  {
+    "id": 27,
+    "legajo": "F-3820/2",
+    "apellido": "Figuera",
+    "nombre": "Dariana",
+    "presente": false
+  },
+  {
+    "id": 28,
+    "legajo": null,
+    "apellido": "Flores",
+    "nombre": "Paloma",
+    "presente": false
+  },
+  {
+    "id": 29,
+    "legajo": null,
+    "apellido": "Fromaget",
+    "nombre": "Thomas Jose",
+    "presente": false
+  },
+  {
+    "id": 30,
+    "legajo": null,
+    "apellido": "Gallo Consagra",
+    "nombre": "Lorenzo",
+    "presente": false
+  },
+  {
+    "id": 31,
+    "legajo": null,
+    "apellido": "García",
+    "nombre": "Álvaro",
+    "presente": false
+  },
+  {
+    "id": 32,
+    "legajo": null,
+    "apellido": "Garcia Casas",
+    "nombre": "Francisco",
+    "presente": false
+  },
+  {
+    "id": 33,
+    "legajo": "G-6014/3",
+    "apellido": "Gavilan",
+    "nombre": "Orlando",
+    "presente": false
+  },
+  {
+    "id": 34,
+    "legajo": null,
+    "apellido": "Gavosto",
+    "nombre": "Lucio Leandro",
+    "presente": false
+  },
+  {
+    "id": 35,
+    "legajo": null,
+    "apellido": "Giavarini",
+    "nombre": "Dante",
+    "presente": false
+  },
+  {
+    "id": 36,
+    "legajo": "G-5825/4",
+    "apellido": "Giordano",
+    "nombre": "Valentina",
+    "presente": false
+  },
+  {
+    "id": 37,
+    "legajo": null,
+    "apellido": "Giufre",
+    "nombre": "Rocío Ayelén",
+    "presente": false
+  },
+  {
+    "id": 38,
+    "legajo": "G-6068/2",
+    "apellido": "Goitía",
+    "nombre": "Facundo Daniel",
+    "presente": false
+  },
+  {
+    "id": 39,
+    "legajo": "G-5954/4",
+    "apellido": "Gomez",
+    "nombre": "Juan Pablo",
+    "presente": false
+  },
+  {
+    "id": 40,
+    "legajo": "G-6074/7",
+    "apellido": "Guidobaldi",
+    "nombre": "Lorenzo Luis",
+    "presente": false
+  },
+  {
+    "id": 41,
+    "legajo": "H-1210/6",
+    "apellido": "Hussein",
+    "nombre": "Juan Pablo",
+    "presente": false
+  },
+  {
+    "id": 42,
+    "legajo": "I-0664/5",
+    "apellido": "Iadanza",
+    "nombre": "Diego Matías",
+    "presente": false
+  },
+  {
+    "id": 43,
+    "legajo": null,
+    "apellido": "Juncos",
+    "nombre": "Santiago Daniel",
+    "presente": false
+  },
+  {
+    "id": 44,
+    "legajo": null,
+    "apellido": "Laborde",
+    "nombre": "Martin",
+    "presente": false
+  },
+  {
+    "id": 45,
+    "legajo": "L-3173/9",
+    "apellido": "Laporta",
+    "nombre": "Lucas",
+    "presente": false
+  },
+  {
+    "id": 46,
+    "legajo": null,
+    "apellido": "Leopaldi",
+    "nombre": "Rocco",
+    "presente": false
+  },
+  {
+    "id": 47,
+    "legajo": "M-7344/1",
+    "apellido": "Maffei",
+    "nombre": "Juliana",
+    "presente": false
+  },
+  {
+    "id": 48,
+    "legajo": null,
+    "apellido": "Manes Glikman",
+    "nombre": "David Nicolas",
+    "presente": false
+  },
+  {
+    "id": 49,
+    "legajo": null,
+    "apellido": "Marcipar",
+    "nombre": "Nicolás Ezequiel",
+    "presente": false
+  },
+  {
+    "id": 50,
+    "legajo": "M-7453/5",
+    "apellido": "Mazzieri",
+    "nombre": "Agostina Luján",
+    "presente": false
+  },
+  {
+    "id": 51,
+    "legajo": "M-6814/4",
+    "apellido": "Mondino",
+    "nombre": "Santiago Agustín",
+    "presente": false
+  },
+  {
+    "id": 52,
+    "legajo": null,
+    "apellido": "Monti Prince",
+    "nombre": "Mateo",
+    "presente": false
+  },
+  {
+    "id": 53,
+    "legajo": "M-7431/4",
+    "apellido": "Moschen",
+    "nombre": "Florencia Irina",
+    "presente": false
+  },
+  {
+    "id": 54,
+    "legajo": null,
+    "apellido": "Munaretti",
+    "nombre": "Melina Maria",
+    "presente": false
+  },
+  {
+    "id": 55,
+    "legajo": "N-1299/8",
+    "apellido": "Narvaez",
+    "nombre": "Valentina",
+    "presente": false
+  },
+  {
+    "id": 56,
+    "legajo": "N-1307/2",
+    "apellido": "Nieto",
+    "nombre": "Joel Elias",
+    "presente": false
+  },
+  {
+    "id": 57,
+    "legajo": "N-1305/6",
+    "apellido": "Nuñez",
+    "nombre": "Tomás Agustín",
+    "presente": false
+  },
+  {
+    "id": 58,
+    "legajo": "O-1626/8",
+    "apellido": "Oroná",
+    "nombre": "Facundo Nicolás",
+    "presente": false
+  },
+  {
+    "id": 59,
+    "legajo": "P-4913/1",
+    "apellido": "Palmerola",
+    "nombre": "Felipe",
+    "presente": false
+  },
+  {
+    "id": 60,
+    "legajo": null,
+    "apellido": "Perrone",
+    "nombre": "Antonela",
+    "presente": false
+  },
+  {
+    "id": 61,
+    "legajo": "P-4981/6",
+    "apellido": "Petroselli",
+    "nombre": "Lisandro José",
+    "presente": false
+  },
+  {
+    "id": 62,
+    "legajo": null,
+    "apellido": "Principe",
+    "nombre": "Milena",
+    "presente": false
+  },
+  {
+    "id": 63,
+    "legajo": null,
+    "apellido": "Principi Bruno",
+    "nombre": "Valentino",
+    "presente": false
+  },
+  {
+    "id": 64,
+    "legajo": "P-5098/9",
+    "apellido": "Puglisi",
+    "nombre": "Renzo",
+    "presente": false
+  },
+  {
+    "id": 65,
+    "legajo": "Q-0497/9",
+    "apellido": "Quintana",
+    "nombre": "Santiago",
+    "presente": false
+  },
+  {
+    "id": 66,
+    "legajo": "R-4432/6",
+    "apellido": "Ramirez",
+    "nombre": "David",
+    "presente": false
+  },
+  {
+    "id": 67,
+    "legajo": null,
+    "apellido": "Ramirez",
+    "nombre": "Luciano",
+    "presente": false
+  },
+  {
+    "id": 68,
+    "legajo": "R-4788/1",
+    "apellido": "Righero",
+    "nombre": "Ticiana",
+    "presente": false
+  },
+  {
+    "id": 69,
+    "legajo": null,
+    "apellido": "Rucci",
+    "nombre": "Mora",
+    "presente": false
+  },
+  {
+    "id": 70,
+    "legajo": "R-4499/7",
+    "apellido": "Ruiz",
+    "nombre": "Ezequiel Francisco",
+    "presente": false
+  },
+  {
+    "id": 71,
+    "legajo": null,
+    "apellido": "Sanchez",
+    "nombre": "Milagros Sofia",
+    "presente": false
+  },
+  {
+    "id": 72,
+    "legajo": null,
+    "apellido": "Sappa",
+    "nombre": "Gastón Gabriel",
+    "presente": false
+  },
+  {
+    "id": 73,
+    "legajo": null,
+    "apellido": "Segura",
+    "nombre": "Francisco",
+    "presente": false
+  },
+  {
+    "id": 74,
+    "legajo": "S-5309/1",
+    "apellido": "Smilovich",
+    "nombre": "Serena",
+    "presente": false
+  },
+  {
+    "id": 75,
+    "legajo": null,
+    "apellido": "Soto",
+    "nombre": "Juan Ignacio",
+    "presente": false
+  },
+  {
+    "id": 76,
+    "legajo": "S-4861/5",
+    "apellido": "Suárez",
+    "nombre": "Kevin Emanuel",
+    "presente": false
+  },
+  {
+    "id": 77,
+    "legajo": null,
+    "apellido": "Tega",
+    "nombre": "Sofia",
+    "presente": false
+  },
+  {
+    "id": 78,
+    "legajo": null,
+    "apellido": "Torti",
+    "nombre": "Valentino",
+    "presente": false
+  },
+  {
+    "id": 79,
+    "legajo": null,
+    "apellido": "Trincheri",
+    "nombre": "Serena",
+    "presente": false
+  },
+  {
+    "id": 80,
+    "legajo": null,
+    "apellido": "Tron",
+    "nombre": "Martina Oriana",
+    "presente": false
+  },
+  {
+    "id": 81,
+    "legajo": null,
+    "apellido": "Trumper",
+    "nombre": "Tomás",
+    "presente": false
+  },
+  {
+    "id": 82,
+    "legajo": null,
+    "apellido": "Valor",
+    "nombre": "Micaela",
+    "presente": false
+  },
+  {
+    "id": 83,
+    "legajo": "V-3171/2",
+    "apellido": "Velozo",
+    "nombre": "Jeremías Exequiel",
+    "presente": false
+  },
+  {
+    "id": 84,
+    "legajo": "Z-1212/2",
+    "apellido": "Zanuttini",
+    "nombre": "Sofia Belen",
+    "presente": false
+  },
+  {
+    "id": 85,
+    "legajo": null,
+    "apellido": "Ferri",
+    "nombre": "Ramiro",
+    "presente": false
+  },
+  {
+    "id": 86,
+    "legajo": null,
+    "apellido": "Mansilla",
+    "nombre": "Facundo",
+    "presente": false
+  },
+  {
+    "id": 87,
+    "legajo": "TEST-0001",
+    "apellido": "Fuentes",
+    "nombre": "Martín",
+    "presente": false
+  },
+  {
+    "id": 88,
+    "legajo": "TEST-0002",
+    "apellido": "Palou",
+    "nombre": "Ines",
+    "presente": false
+  }
+]
