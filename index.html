@@ -112,7 +112,7 @@ async function cargarAlumnos() {
 async function marcar() {
     const id = document.getElementById("listaAlumnos").value;
 
-    const res = await await fetch("/asistencia", {
+    const res = await fetch("/asistencia", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

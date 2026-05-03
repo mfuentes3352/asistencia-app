@@ -68,6 +68,13 @@ tr:nth-child(even) {
     Exportar a Excel
 </button>
 
+<button onclick="resetear()" style="
+    background-color: #f5e6cc;
+    color: #5a4a3f;
+">
+    Resetear asistencia
+</button>
+
 <table>
     <thead>
         <tr>
@@ -80,7 +87,7 @@ tr:nth-child(even) {
 
 <script>
 async function cargarTabla() {
-    const res = await const res = await fetch("/tabla");
+    const res = await fetch("/tabla?nocache=" + Date.now());
     const data = await res.json();
 
     const tbody = document.getElementById("tabla");
@@ -109,7 +116,7 @@ async function cargarTabla() {
 }
 
 async function exportarCSV() {
-    const res = await const res = await fetch("/tabla");
+    const res = await fetch("/tabla");
     const data = await res.json();
 
     let csv = "Alumno,Estado\n";
@@ -128,6 +135,18 @@ async function exportarCSV() {
     a.click();
 
     window.URL.revokeObjectURL(url);
+}
+
+async function resetear() {
+    const confirmar = confirm("¿Seguro que querés resetear la asistencia?");
+
+    if (!confirmar) return;
+
+    await fetch("/reset", {
+        method: "POST"
+    });
+
+    cargarTabla();
 }
 
 // refresca cada 3 segundos automáticamente

@@ -40,6 +40,13 @@ app.post("/asistencia", (req, res) => {
     res.json({ mensaje: "Asistencia registrada" });
 });
 
+app.post("/reset", (req, res) => {
+    alumnos.forEach(a => a.presente = false);
+
+    fs.writeFileSync("alumnos.json", JSON.stringify(alumnos, null, 2));
+
+    res.json({ mensaje: "Asistencia reseteada" });
+});
 
 // 3. Ver estado
 app.get("/estado", (req, res) => {
